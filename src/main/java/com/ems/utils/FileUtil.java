@@ -13,7 +13,6 @@ public class FileUtil {
         // try with resources
         try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(FILE_PATH))) {
             oos.writeObject(employees);
-            System.out.println("Data saved successfully!");
         }
         catch (IOException e) {
             System.out.println("Error saving data: " + e.getMessage());
